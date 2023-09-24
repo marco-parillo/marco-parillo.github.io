@@ -8,7 +8,6 @@ $ git config --list
 $ git clone https://github.com/marco-parillo/marco-parillo.github.io.git
 $ git clone git@github.com:marco-parillo/svpn-login.git
 $ git clone https://aur.archlinux.org/f5vpn.git
-$ git clone git@gitlab.com:44WeWantMore/Bookmarks.git
 $ cd marco-parillo.github.io
 $ git status
 $ git add README.md
@@ -20,21 +19,6 @@ $ git push
 $
 $ git fetch origin
 $ git merge origin/master
-```
-
-## Copy github repo to gitlab
-
-```
-cd marco-parillo.github.io
-git config --global user.name "44WeWantMore"
-git config --global user.email "44wewantmore@protonmail.com"
-git remote rename origin old-origin
-git remote add origin https://gitlab.com/44WeWantMore/Bookmarks.git
-git push -u origin --all
-git push -u origin --tags
-git status
-git config
-git config --list
 ```
 
 ## Apply a gitignore retroactively
